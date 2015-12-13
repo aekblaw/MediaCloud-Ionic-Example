@@ -1,6 +1,6 @@
 <ion-side-menus enable-menu-with-back-views="false">
   <ion-side-menu-content>
-    <ion-nav-bar class="bar-stable">
+    <ion-nav-bar class="bar bar-header bar-positive" >
       <ion-nav-back-button>
       </ion-nav-back-button>
 
@@ -8,26 +8,49 @@
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
         </button>
       </ion-nav-buttons>
+
+      <ion-nav-buttons side="right">
+        <a class="button icon-right ion-home" href="http://mediacloud.org/">MediaCloud Home</a>
+
+        <a href="http://google.com" class="button">Go to Google</a>
+      </ion-nav-buttons>
+
+
     </ion-nav-bar>
     <ion-nav-view name="menuContent" class="padding"></ion-nav-view>
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
     <ion-header-bar class="bar-stable">
-      <h1 class="title">Searches</h1>
+      <h1 class="title">Election Searches</h1>
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close href="#/app/search/kittens">
-          Kittens
+
+        <ion-item menu-close class="item item-avatar" href="#/app/search/Trump">
+          <img src="templates/trump.jpg">
+          <h2>Trump</h2>      
         </ion-item>
-        <ion-item menu-close href="#/app/search/robots">
-          Robots
+
+        <ion-item menu-close class="item item-avatar" href="#/app/search/Rubio">
+          <img src="templates/rubio.jpg">
+          <h2>Rubio</h2>      
         </ion-item>
-        <ion-item menu-close href="#/app/search/puppies">
-          Puppies
+
+        <ion-item menu-close class="item item-avatar" href="#/app/search/Clinton">
+          <img src="templates/Clinton.jpg">
+          <h2>Clinton</h2>      
         </ion-item>
+
+        <ion-item menu-close class="item item-avatar" href="#/app/search/Sanders">
+          <img src="templates/sanders.jpg">
+          <h2>Sanders</h2>      
+        </ion-item>
+
+        
+        
       </ion-list>
     </ion-content>
   </ion-side-menu>
+
 </ion-side-menus>

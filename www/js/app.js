@@ -45,5 +45,7 @@ angular.module('mc', ['ionic', 'mc.controllers', 'mc.services', 'mc.config'])
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/search/kittens');
+  //originally edited to prefer puppies over kittens :)
+  
+  $urlRouterProvider.otherwise('/app/search/puppies');
 });

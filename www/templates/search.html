@@ -1,7 +1,20 @@
-<ion-view view-title="Search">
+<ion-view view-title="Search Result">
+
   <ion-content>
     <h1>Search for {{keyword}}</h1>
     <p ng-if="data.sentenceCount==null"><ion-spinner></ion-spinner></p>
-    <p ng-if="data.sentenceCount!=null">There are {{data.sentenceCount | number}} results.</p>
+    <p ng-if="data.sentenceCount!=null">There are {{data.sentenceCount | number}} results. Liked this result? Star it below! </p>
+
+	<br>    
+    <p> <button class="button icon-left ion-star button-positive">Favorites </button> </p> 
+    
+
+
+  
+
+    
+    
+
+    <p> Thank you for using Media Cloud. This is a project of the Harvard Berkman Center for Internet & Society and the MIT Center for Civic Media. </p>
   </ion-content>
 </ion-view>
